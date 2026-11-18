@@ -1,0 +1,79 @@
+# Changelog
+
+All notable changes to The BlackHAT Roadmap will be documented in this file.
+
+The format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [1.2.2] - 2026-10-30
+
+### Added
+- **Maximum Anonymity Workflow (`black-bag/Max_Anonymity_Workflow.md`)**: The quick-reference architectural blueprint for the complete anonymity stack. Synthesizes Phase -1 and the Survival Tactics manual into a clear, end-to-end guide:
+  - Complete traffic chain (Local Machine -> WireGuard on XMR-paid VPS -> Tor network -> Target).
+  - Multi-adversary exposure analysis (what your ISP, VPN provider, Tor nodes, and destination see).
+  - The OPSEC Failure Pyramid (Human, Network, Physical, and Forensic layers).
+  - The Seven Layers of Maximum Anonymity (Layers 0 through 7).
+  - Three-Identity compartmentalization doctrine (Real, Research, and Operational).
+  - Whonix architectural leak-proof isolation mechanics.
+  - Threat model tier calibration (Tiers 1 through 4).
+  - 7-step pre-operational verification checklist.
+  - Forensic failure post-mortem matrix detailing single points of failure.
+- **Architectural Diagrams (`assets/diagrams/Max_Anonymity_Workflow/`)**:
+  - `1._The_Complete_Anonymity_Chain.png`: 9-node execution flowchart from physical location through Tor exit.
+  - `2._The_Seven_Layers_of_Maximum_Anonymity.png`: Comprehensive defense-in-depth layer stack.
+  - `3._Verification_Flow.png`: Pre-operational go/no-go verification decision tree.
+- **Curriculum Integration**: Synchronized companion references across `README.md`, `PHASE_-1.md`, `BlackHat_Long-Term_Survival_Tactics.md`, `FAQ.md`, `Final_Word.md`, `assets/README.md`, and `TRACKER.md`.
+
+---
+
+## [1.2.1] - 2026-10-16
+
+### Added
+- **Dual-License Framework**: Formal dual-licensing architecture separating curriculum documentation and executable engineering codebases:
+  - `CC BY-SA 4.0` in `LICENSE-DOCS` covering all 45,000+ lines of written curriculum across Volume I, Volume II, field guides, trackers, and 150+ architectural diagrams.
+  - Pure `MIT` in root `LICENSE` covering source code, lab harnesses, C/Rust payloads, and build automation.
+- **SPDX Source Headers**: Standardized 3-line author and `SPDX-License-Identifier: MIT` metadata across weaponized payloads (`main.c`, `main.rs`, `Makefile`, and `Cargo.toml`).
+- **Attribution & Anti-Theft Anchors**: Embedded canonical repository references and cross-links to the curated offensive security ecosystem across master companion guides.
+
+---
+
+## [1.2.0] - 2026-09-26
+
+### Initial Public Release
+
+The complete zero-to-elite offensive security engineering curriculum.
+
+**Core Curriculum**
+- 8 progression phases (Phase -1: OPSEC through Phase 6: Special Operations)
+- 44,900+ lines of dense offensive engineering documentation
+- 440+ major sections, 1,120+ subsections across 15 master modules
+- 1,080+ verified code blocks across 13+ languages
+
+**Technical Coverage**
+- 300+ offensive tools cataloged across 18 operational categories
+- 200+ MITRE ATT&CK techniques mapped (Enterprise v15, ICS, ATLAS)
+- 150+ original high-resolution diagrams and architecture visuals
+- 5 recommended learning tracks (Exploit Researcher, Red Team, Implant Dev, Hardware, Special Ops)
+
+**Compilable Payloads**
+- `01_dynamic_api_resolver`: In-memory PEB traversal and DJB2 export hashing in C
+- `02_offensive_rust_loader`: RW to RX memory state flipping and binary hardening in Rust
+
+**Field Guides**
+- Comprehensive FAQ (career realities, hardware kits, quantum transition)
+- Lab Setup Guide (multi-tier AD, hypervisor blueprints, malware sandbox)
+- Philosophy: The BlackHat Mindset (cognitive doctrine, adversarial thinking)
+- MITRE ATT&CK Quick Reference (Enterprise v15, ICS, ATLAS tactical matrix)
+- Tools Inventory (300+ tools indexed by phase and category)
+- Resources Aggregated (canonical literature, whitepapers, lab archives)
+- Final Word (verification statistics, researcher attributions, 2027-2028 horizon)
+
+**Black-Bag Volume**
+- BlackHat Long-Term Survival Tactics: 3,000+ line counter-surveillance and lifecycle OPSEC manual
+
+**Community Infrastructure**
+- Contributing guidelines with quality thresholds
+- Issue templates (curriculum fix, resource suggestion)
+- Pull request template with technical validation checklist
+- Operator Journey Tracker (`TRACKER.md`): comprehensive progress dashboard with date tracking, parallel learning companions, 9 specialized Phase 4 tracks, and mastery gate checkpoints
+- Security policy and responsible disclosure process
+- CITATION.cff for academic attribution
